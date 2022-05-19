@@ -33,7 +33,7 @@ def overpass_query(input):
 		node.tags['id'] = node.id
 		nodes.append(node.tags)
 	df = pd.DataFrame(nodes)
-	df.to_csv('test.csv',index=False)
+	df.to_csv('output.csv',index=False)
 	return(print('Output file generated!'))
 
 user_query = get_API_query()

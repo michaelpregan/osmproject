@@ -1,10 +1,11 @@
-# Requires Overpy, Pandas to be installed
+# Requires Overpy and Pandas to be installed
 import overpy
 import json
 import pandas as pd
 
 def get_API_query():
 	# Gets the input from the user. 
+	# Latitude, longitude, and search radius entries must only be numbers
 	# Parameter must follow the format "Key"="Value" from this table: https://wiki.openstreetmap.org/wiki/Map_features
 	print('Latitude:')
 	latitude = input()
